@@ -66,6 +66,9 @@
           "defaultConfiguration": "production"
         },
         "serve": {
+          "options": {
+            "hmr": false
+          },
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
@@ -92,6 +95,14 @@
               {
                 "glob": "**/*",
                 "input": "public"
+              },
+              {
+                "glob": "favicon.ico",
+                "input": "src/"
+              },
+              {
+                "glob": "assets/**",
+                "input": "src/assets/"
               }
             ],
             "styles": [
