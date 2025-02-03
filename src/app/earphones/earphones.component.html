@@ -1,1 +1,34 @@
-<p>earphones works!</p>
+<section class="hero">
+    <h2>SPEAKERS</h2>
+</section>
+
+<section class="earphones-wrapper">
+    <div class="earphone-card">
+        <img src="assets/product-yx1-earphones/desktop/image-product.jpg" class="earphone-img" alt="image-zx9-earphone">
+        <div class="earphone-description">
+            <h2 class="new-product">NEW PRODUCT</h2>
+            <h3 class="earphone-heading">YX1 WIRELESS EARPHONES</h3>
+            <p class="earphone-content">Tailor your listening experience with bespoke dynamic drivers from the new YX1 Wireless Earphones. 
+                Enjoy incredible high-fidelity sound even in noisy environments with its active noise cancellation feature.</p>
+            <button class="btn-3">SEE PRODUCT</button>
+        </div>
+    </div>
+</section>
+
+<section class="categories">
+    <div class="card-wrapper">
+        @for (category of categories; track category.name){
+            <div class="card">
+                <img src="{{category.image}}" alt="{{category.name}}">
+                
+                <div class="card-contents">
+                    <h4>{{category.name}}</h4>
+                    <a href="{{category.link}}">SHOP<span>></span></a>
+                </div>
+               
+            </div>
+           } @empty{
+            <p>No categories available</p>
+           }
+    </div>
+</section>

@@ -1,0 +1,307 @@
+.hero {
+  background-color: #101010;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image {
+  width: 90%;
+  margin: auto;
+  position: relative;
+  z-index: 0;
+}
+
+.hero-description {
+  margin: 35px;
+  position: absolute;
+  z-index: 1;
+  width: 25%;
+  top: 13em;
+  left: 8em;
+}
+
+.hero-description h2,
+.hero-description p,
+.hero-description h3 {
+  color: #FAFAFA;
+  opacity: 0.8
+  /* text-align: center; */
+}
+
+.hero-description h2 {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  letter-spacing: 0.8em;
+  font-weight: 100;
+  color: #F1F1F1;
+}
+
+.hero-description h3 {
+  margin-top: 1rem;
+  font-size: 2.75rem;
+  line-height: 3.5rem;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+}
+
+.hero-description p {
+  margin-top: 1rem;
+  color: #F1F1F1;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.01rem;
+  font-weight: 100;
+}
+
+
+.categories {
+  margin: auto;
+  margin-top: 4rem;
+ width: 80%;
+}
+
+.card-wrapper {
+  padding: 1rem;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.card {
+  margin: 2rem;
+  display: flex;
+  margin-top: 5rem;
+  position: relative;
+  width: 21em;
+  height: 14em;
+  border-radius: 1em;
+  background-color: #F1F1F1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.card img {
+  position: absolute;
+  bottom: 6rem;
+  width: 65%
+  /* height: 10rem; */
+}
+
+.card-contents{
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.card-contents>*{
+  margin: 0.5rem;
+  letter-spacing: 0.01rem;
+}
+
+.card-contents h4{
+  font-size: 1.5rem;
+  line-height: 20px;
+  color: #101010;
+}
+
+.card-contents a{
+  font-size: 13px;
+  line-height: 20px;
+  color: #101010;
+  opacity: 0.5;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.card-contents a:hover{
+  color: #D87D4A;
+}
+
+.card-contents span{
+
+  color: #D87D4A;
+}
+
+.card-contents a:active{
+  color: #FBAF85;
+}
+
+button {
+  margin: 3rem;
+  margin-left: 0rem;
+  background-color: #D87D4A;
+  color: #F1F1F1;
+  border: none;
+  padding: 10px 20px;
+  letter-spacing: 2px;
+  /* border-radius: 5px; */
+  cursor: pointer;
+}
+
+button:active {
+  background-color: #FBAF85;
+}
+
+.product-wrapper{
+  margin: auto;
+  margin-top: 4rem;
+  width: 80%;
+}
+
+.product{
+  width: 100%;
+  height: 50vh;
+  margin-bottom: 2rem;
+  border-radius: 1em;
+}
+
+.product img{
+  border-radius: 1em;
+}
+
+.product-ZX9-speaker{
+  background-color: #D87D4A;
+    display: flex;
+    position: relative;
+    align-items: center;
+    height: 62vh;
+}
+
+.product-ZX9-speaker .zx9{
+  width: 15em;
+  height: 22em;
+  position: absolute;
+  /* top: 6em; */
+  left: 6rem;
+  z-index: 1;
+  object-fit: inherit;
+  object-position: 105% 7px;
+}
+
+.pattern-circles{
+  position: absolute;
+  top: 2em;
+  right: 24em;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.zx9-description{
+  color: #F1F1F1;
+  position: absolute;
+  /* top: 6em; */
+  right: 11em;
+  width: 30%;
+}
+
+.zx9-description h4{
+  font-size: 4rem;
+  line-height: 4rem;
+  letter-spacing: 0.5rem;
+  font-weight: 500;
+  color: #F1F1F1;
+
+}
+
+.zx9-description p{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.9em;
+  line-height: 1.5rem;
+  letter-spacing: 1px;
+  font-weight: 100;
+  color: #F1F1F1;
+  margin-bottom: 3rem;
+}
+
+.zx9-description a{
+  font-size: 0.9em;
+  line-height: 1.5rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: #F1F1F1;
+  background-color: #101010;
+  text-decoration: none;
+  padding:1rem;
+}
+
+.zx9-description a:hover{
+  background-color: #4C4C4C;
+}
+
+.product-ZX7-speaker{
+  background-color: #101010;
+    position: relative;
+    align-items: center;
+    height: 62vh;
+}
+
+.zx7-image{
+  width: 100%;
+  height: 100%;
+}
+
+
+.zx7-description{
+  color: #101010;
+  position: absolute;
+  top: 10em;
+  left: 11em;
+  width: 30%;
+}
+
+.zx7-description h4{
+  font-size: 2rem;
+  line-height: 4rem;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+  color: #101010;
+  margin-bottom: 2rem;
+}
+
+.btn-white{
+  font-size: 0.9em;
+  background-color: #F1F1F1;
+  color: #101010;
+  border: 2px solid #101010;
+  padding: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-white:hover{
+  background-color: #101010;
+  color: #F1F1F1;
+}
+
+.product-yx1-earphones{
+    display: flex;
+
+}
+
+.yx1-description{
+  color: #101010;
+  width: 50%;
+  margin-left: 1rem;
+  display: flex;
+  background-color: #F1F1F1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1em;
+}
+
+.yx1-description h4{
+  font-size: 2rem;
+  line-height: 4rem;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+  color: #101010;
+  margin-bottom: 2rem;
+}

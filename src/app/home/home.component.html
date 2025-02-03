@@ -1,1 +1,55 @@
-<p>home works!</p>
+<div class="hero">
+    <div class="hero-description">
+        <h2>NEW PRODUCT</h2>
+        <h3>XX99 MARK II HEADPHONES</h3>
+        <p>Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast.</p>
+        <button>SEE PRODUCT</button>
+    </div>
+    <img src="assets/home/desktop/image-hero.jpg" alt="hero-img"  class="hero-image">
+</div>
+
+
+<section class="categories">
+    <div class="card-wrapper">
+        @for (category of categories; track category.name){
+            <div class="card">
+                <img src="{{category.image}}" alt="{{category.name}}">
+                
+                <div class="card-contents">
+                    <h4>{{category.name}}</h4>
+                    <a href="{{category.link}}">SHOP<span>></span></a>
+                </div>
+               
+            </div>
+           } @empty{
+            <p>No categories available</p>
+           }
+    </div>
+</section>
+
+    <section class="product-wrapper">
+        <div class=" product product-ZX9-speaker">
+            <img src="assets/home/desktop/image-speaker-zx9.png" class="zx9" alt="ZX9 Speaker">
+            <img src="assets/home/desktop/pattern-circles.svg" alt="pattern-circles" class="pattern-circles">
+            <div class="zx9-description">
+                <h4>ZX9 SPEAKER</h4>
+                <p>Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound</p>
+                <a href="/speakers">SEE PRODUCT</a>
+            </div>
+        </div>
+        <div class=" product product-ZX7-speaker">
+            <img src="assets/home/desktop/image-speaker-zx7.jpg"  class="zx7-image" alt="image-speaker-zx7">
+           <div class="zx7-description">
+            <h4>ZX7 SPEAKER</h4>
+            <a href="/speakers" class="btn-white">SEE PRODUCT</a>
+           </div>
+       
+        </div>
+        <div class=" product product-yx1-earphones">
+            <img src="assets/home/desktop/image-earphones-yx1.jpg" class="yx1-image" alt="image-earphones-yx1">
+            <div class="yx1-description">
+                <h4>YX1 Earphones</h4>
+                <a href="/earphones" class="btn-white">SEE PRODUCT</a>
+            </div>
+        </div>
+    </section>

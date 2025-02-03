@@ -1,1 +1,45 @@
-<p>speakers works!</p>
+<section class="hero">
+    <h2>SPEAKERS</h2>
+</section>
+
+<section class="speakers-wrapper">
+    <div class="speaker-card">
+        <img src="assets/shared/desktop/image-zx9-speaker.jpg" class="speaker-img" alt="image-zx9-speaker">
+        <div class="speaker-description">
+            <h2 class="new-product">NEW PRODUCT</h2>
+            <h3 class="speaker-heading">ZX9 SPEAKER</h3>
+            <p class="speaker-content"> Upgrade your sound system with the all new ZX9 active speaker. It's a bookshelf speaker 
+                system that offers truly wireless connectivity -- creating new possibilities for more 
+                pleasing and practical audio setups.</p>
+            <button class="btn-3">SEE PRODUCT</button>
+        </div>
+    </div>
+    <div class="speaker-card">
+        <div class="speaker-description">
+            <h3 class="speaker-heading">ZX7 SPEAKER</h3>
+            <p class="speaker-content">  Stream high quality sound wirelessly with minimal loss. The ZX7 bookshelf speaker uses 
+                high-end audiophile components that represents the top of the line powered speakers for 
+                home or studio use.</p>
+            <button class="btn-3">SEE PRODUCT</button>
+        </div>
+        <img src="assets/shared/desktop/image-zx7-speaker.jpg" class="speaker-img" alt="image-zx7-speaker">
+    </div>
+</section>
+
+<section class="categories">
+    <div class="card-wrapper">
+        @for (category of categories; track category.name){
+            <div class="card">
+                <img src="{{category.image}}" alt="{{category.name}}">
+                
+                <div class="card-contents">
+                    <h4>{{category.name}}</h4>
+                    <a href="{{category.link}}">SHOP<span>></span></a>
+                </div>
+               
+            </div>
+           } @empty{
+            <p>No categories available</p>
+           }
+    </div>
+</section>

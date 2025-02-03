@@ -3,7 +3,9 @@
     font-weight: 800;
     color: #FAFAFA;
 }
-
+li{
+    list-style: none;
+}
 .nav-bar{
     width: 80%;
     margin: auto;
@@ -50,7 +52,138 @@ img{
 }
 
 hr{
-    border: 1px solid #FAFAFA;
+    border: 1px solid #101010;
+    opacity: 0.5;
     width: 80%;
+    margin: auto;
+}
+
+.company-description img{
+    height: 100%;
+    width: 70%;
+    border-radius: 1rem;
+}
+
+.text-section{
+    display: flex;
+    height: 100%;
+    width:70%;
+    margin-right: 66px;
+    padding-right: 13%;
+    /* padding: 13% 13% 13% 0; */
+    flex-direction: column;
+    justify-content: space-around;
+}
+.company-description{
+    height: 67vh;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding: 1rem;
+    color: #101010;
+    margin-bottom: 15vh;
+}
+
+.company-description p{
+    margin-bottom: 84px;
+    width: 100%;
+    font-size: 12px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #101010;
+    opacity: 0.5;
+}
+
+.company-description h2{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    padding-right: 1px;
+}
+
+.company-description h2 span{
+    color: #D87D4A;
+}
+
+.footer{
+    background-color: #101010;
+    color: #FAFAFA;
+}
+
+footer{
+    position: relative;
+    width: 80%;
+    margin: auto;
+    padding-top: 25px;
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+footer ul li{
+    margin: 0 1rem;
+}
+
+footer ul li a{
+    color: #FAFAFA;
+    text-decoration: none;
+}
+
+footer ul li a:hover{
+    color: #D87D4A;
+}
+
+footer p{
+    width: 38%;
+    padding: 1rem;
+    font-size: 0.8em;
+    line-height: 25px;
+    font-weight: 400;
+    color: #f1f1f1;
+    opacity: 0.5;
+}
+
+.social-media{
+    width: 10%;
+    position:absolute;
+    bottom: 67px;
+    right: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.social-media a{
+    color: #FAFAFA;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+
+.social-media img{
+    width: 20px;
+    height: 20px;
+}
+
+footer hr{
+    position: absolute;
+    top: 0;
+    left: 18px;
+    border: 3px solid #D87D4A;
+    width: 7%;
     margin: auto;
 }
