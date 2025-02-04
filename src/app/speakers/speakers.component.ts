@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-speakers',
@@ -25,5 +26,11 @@ export class SpeakersComponent {
     description: 'Shop now',
     link: '/earphones'
   }];
+
+  constructor(private router: Router){}
+
+  viewDetails(id:number){
+    this.router.navigate(['product-details/'+id]);    
+  }
 
 }

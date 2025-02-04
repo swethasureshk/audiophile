@@ -1,0 +1,33 @@
+<a href="">Go Back</a>
+<section class="primary-info">
+    <div>
+        <img src="{{product.image.desktop}}" alt="{{product.slug}}">
+        <div class="content">
+            @if(product.new == true){
+                <h2>NEW PRODUCT</h2>
+            }
+            <h3>{{product.name.toUpperCase()}}</h3>
+            <p>{{product.description}}</p>
+            <p>{{product.price}}</p>
+            <div class="quantity-wrapper">
+                <button>-</button>{{cartQuantity}}<button>+</button>
+            </div>
+            <button>ADD TO CART</button>
+        </div>
+    </div>
+
+    <div>
+        <div class="features-wrapper">
+            <h4>FEATURES</h4>
+            <p>{{product.features}}</p>
+        </div>
+        <div class="in-the-box-wrapper">
+            <h4>IN THE BOX</h4>
+            @for(item of product.includes; track item.name){
+                <p><span>{{item.quantity}}x</span>{{item.item}}</p>
+            }
+        </div>      
+
+    </div>
+</section>
+

@@ -8,6 +8,8 @@ import { HeadphonesComponent } from './headphones/headphones.component';
 import { SpeakersComponent } from './speakers/speakers.component';
 import { EarphonesComponent } from './earphones/earphones.component';
 import { RouterModule } from '@angular/router';
+import { ProductDetailsComponent } from './product-details/product-details.component';
+import { provideHttpClient } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -15,13 +17,16 @@ import { RouterModule } from '@angular/router';
     HomeComponent,
     HeadphonesComponent,
     SpeakersComponent,
-    EarphonesComponent
+    EarphonesComponent,
+    ProductDetailsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
-  providers: [],
+  providers: [
+    provideHttpClient()
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

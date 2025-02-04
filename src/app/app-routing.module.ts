@@ -4,14 +4,16 @@ import { HomeComponent } from './home/home.component';
 import { HeadphonesComponent } from './headphones/headphones.component';
 import { SpeakersComponent } from './speakers/speakers.component';
 import { EarphonesComponent } from './earphones/earphones.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' }, // Redirect '' to '/home'
-  { path: 'home', component: HomeComponent },          // Single route for home
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
   { path: 'headphones', component: HeadphonesComponent },
   { path: 'speakers', component: SpeakersComponent },
   { path: 'earphones', component: EarphonesComponent },
-  { path: '**', redirectTo: '/home' }                  // Wildcard route for undefined paths
+  {path:'product-details/:id', component: ProductDetailsComponent},
+  // { path: '**', redirectTo: '/home' }
 ];
 
 @NgModule({
