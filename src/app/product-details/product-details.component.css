@@ -1,0 +1,134 @@
+.primary-info{
+    width: 80%;
+    margin: auto;
+}
+.product-description {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.product-description img{
+    width: 50%;
+    height:90vh;
+    padding: 2rem;
+}
+
+.content{
+    width: 40%;
+    padding: 2rem;
+}
+
+h2{
+    font-size: 1em;
+    line-height: 1em;
+    letter-spacing: 0.45em;
+    font-weight: 300;
+    color: #D87D4A;
+    margin-bottom: 1.5rem;
+}
+
+h3{
+    font-size: 2rem;
+    line-height: 1em;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: #101010;
+    margin-bottom: 1.5rem;
+    /* margin: 0 3rem; */
+}
+
+p{
+    font-size: 0.8em;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: #101010;
+    opacity: 0.8;
+    margin-bottom: 1rem;
+}
+
+.price{
+    font-weight: 700;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.quantity-wrapper{
+    background-color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 8rem;
+}
+
+.quantity-wrapper button{
+    border: none;
+    width: 40%;
+    color: #D87D4A;
+    cursor: pointer;
+    padding:1rem
+}
+
+.btn-3{
+    margin: 3rem;
+    width: 12rem;
+    /* margin-left: 0rem; */
+    background-color: #D87D4A;
+    color: #F1F1F1;
+    border: none;
+    padding: 10px 20px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.features-details{
+    display: flex;
+    justify-content: space-between;
+}
+
+.features-wrapper{
+    width: 50%;
+}
+
+.features-details h4{
+    font-size: 1.5rem;
+    letter-spacing: 0.15rem;
+    margin-bottom: 1rem;
+
+}
+
+.in-the-box-wrapper{
+    width: 40%;
+}
+
+.in-the-box-wrapper span {
+    color: #D87D4A;
+    font-weight: 600;
+}
+
+.galary-wrapper img{
+    margin: 1rem;
+    border-radius: 0.5rem;
+    object-fit: fill;
+}
+
+.galary-wrapper{
+    display: flex;
+    margin-top: 3rem;
+}
+
+.image-set1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-set2{
+    width: 50%;
+}

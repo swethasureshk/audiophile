@@ -7,13 +7,16 @@
       <li><a routerLink="/speakers">SPEAKERS</a></li>
       <li><a routerLink="/earphones">EARPHONES</a></li>
     </ul>
-    <button>
+    <button (click)="showMyContainer=!showMyContainer">
       <img src="../../assets/shared/desktop/icon-cart.svg" alt="cart" class="svg-cart" />
     </button>
   </nav>
   <hr>
 </section>
 
+
+<app-cart id="appCart" *ngIf="showMyContainer"></app-cart>
+<div class="overlay" id="overlay" *ngIf="showMyContainer" (click)="showMyContainer = false"></div>
 <router-outlet />
 
 <section class="company-description">
@@ -46,6 +49,7 @@
       and sound specialists who are devoted to helping you get the most out of personal audio. Come and 
       visit our demo facility - we’re open 7 days a week.</p>
     <p>Copyright 2021. All Rights Reserved</p>
+    
     <div class="social-media">
       <a href=""><img src="../../assets/shared/desktop/icon-facebook.svg" alt="facebook" class="svg-facebook"/></a>
       <a href=""><img src="../../assets/shared/desktop/icon-twitter.svg" alt="twitter" class="svg-twitter"/></a>

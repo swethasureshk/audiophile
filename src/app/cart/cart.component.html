@@ -1,0 +1,23 @@
+<div class="cart-info">
+    <div class="cart-sub">
+        <p>Cart({{cart.length}})</p>
+        <a (click)="removeAll()">Remove All</a>
+    </div>
+<div class="product-list">
+    @for(item of cart; track item.id){
+        <div class="product-card">
+            <div class="item-details">
+                <p class="slug">{{item.slug}}</p>
+                <p class="price">{{item.price}}</p>
+            </div>
+
+            <div class="quantity-wrapper">
+                <button (click)='reduce(item)'>-</button>{{item.quantity}}<button (click)="increase(item)">+</button>
+            </div>
+        </div>
+    }
+</div>
+    
+
+    <button class="btn-3" (click)="checkout()">CHECKOUT</button>
+</div>

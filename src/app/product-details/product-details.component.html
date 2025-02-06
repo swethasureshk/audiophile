@@ -1,6 +1,6 @@
-<a href="">Go Back</a>
+<!-- <a href="" (click)="goBack()">Go Back</a> -->
 <section class="primary-info">
-    <div>
+    <div class="product-description">
         <img src="{{product.image.desktop}}" alt="{{product.slug}}">
         <div class="content">
             @if(product.new == true){
@@ -8,15 +8,17 @@
             }
             <h3>{{product.name.toUpperCase()}}</h3>
             <p>{{product.description}}</p>
-            <p>{{product.price}}</p>
-            <div class="quantity-wrapper">
-                <button>-</button>{{cartQuantity}}<button>+</button>
-            </div>
-            <button>ADD TO CART</button>
+            <p class="price">$ {{product.price}}</p>
+            <div class="buttons">
+                <div class="quantity-wrapper">
+                    <button (click)="reduce()">-</button>{{cartQuantity}}<button (click)="increase()">+</button>
+                </div>
+                <button class="btn-3"(click)="addToCart()">ADD TO CART</button>
+            </div>           
         </div>
     </div>
 
-    <div>
+    <div class="features-details">
         <div class="features-wrapper">
             <h4>FEATURES</h4>
             <p>{{product.features}}</p>
@@ -24,10 +26,18 @@
         <div class="in-the-box-wrapper">
             <h4>IN THE BOX</h4>
             @for(item of product.includes; track item.name){
-                <p><span>{{item.quantity}}x</span>{{item.item}}</p>
+                <p><span>{{item.quantity}}x</span> {{item.item}}</p>
             }
         </div>      
-
     </div>
+
+        <div class="galary-wrapper">
+            <div class="image-set1">
+                <img src="{{product.gallery.first.desktop}}" alt="{{product.slug}}">
+                <img src="{{product.gallery.second.desktop}}" alt="{{product.slug}}">
+            </div>
+            <img src="{{product.gallery.third.desktop}}" alt="{{product.slug}}" class="image-set2">
+        </div>
 </section>
+
 

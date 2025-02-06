@@ -1,0 +1,29 @@
+.confirmation-wrapper{
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50vh;
+}
+
+h3{
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+}
+
+p{
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
+
+}
+
+button{
+    width: 100%;
+    padding: 1rem;
+    background-color: #D87D4A;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}

@@ -8,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'audiophile';
+  showMyContainer: boolean = false;
 }

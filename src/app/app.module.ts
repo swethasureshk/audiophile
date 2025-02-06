@@ -10,6 +10,10 @@ import { EarphonesComponent } from './earphones/earphones.component';
 import { RouterModule } from '@angular/router';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { provideHttpClient } from '@angular/common/http';
+import { CartComponent } from './cart/cart.component';
+import { BillingComponent } from './billing/billing.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { ConfirmationComponent } from './confirmation/confirmation.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +22,15 @@ import { provideHttpClient } from '@angular/common/http';
     HeadphonesComponent,
     SpeakersComponent,
     EarphonesComponent,
-    ProductDetailsComponent
+    ProductDetailsComponent,
+    CartComponent,
+    BillingComponent,
+    ConfirmationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [
     provideHttpClient()
